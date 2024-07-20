@@ -63,22 +63,18 @@ export default function MainNav() {
           </Form>
           &nbsp;
           <Nav>
-            <NavDropdown title="User Name" id="basic-nav-dropdown">
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <Link href="/favourite" passHref legacyBehavior>
                 <NavDropdown.Item
                   active={router.pathname === "/favourite"}
                   onClick={() => setIsExpanded(false)}
-                >
-                  Favourites
-                </NavDropdown.Item>
+                > Favourites </NavDropdown.Item>
               </Link>
               <Link href="/history" passHref legacyBehavior>
                 <NavDropdown.Item
                   active={router.pathname === "/history"}
                   onClick={() => setIsExpanded(false)}
-                >
-                  Search History
-                </NavDropdown.Item>
+                > Search History </NavDropdown.Item>
               </Link>
             </NavDropdown>
           </Nav>
